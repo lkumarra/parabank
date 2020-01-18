@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2020-01-17T21:45:01 IST" name="Default suite" finished-at="2020-01-17T21:45:30 IST" duration-ms="28708">
+    <groups>
+    </groups>
+    <test started-at="2020-01-17T21:45:01 IST" name="Default test" finished-at="2020-01-17T21:45:30 IST" duration-ms="28708">
+      <class name="com.parabank.qa.testcases.WelcomePageTest">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.parabank.qa.testcases.WelcomePageTest@78e117e3]" started-at="2020-01-17T21:45:01 IST" name="setUp" finished-at="2020-01-17T21:45:29 IST" duration-ms="28069" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="userLoginSuccessfullyVerification()[pri:0, instance:com.parabank.qa.testcases.WelcomePageTest@78e117e3]" started-at="2020-01-17T21:45:29 IST" name="userLoginSuccessfullyVerification" finished-at="2020-01-17T21:45:29 IST" duration-ms="5" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- userLoginSuccessfullyVerification -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.parabank.qa.testcases.WelcomePageTest@78e117e3]" started-at="2020-01-17T21:45:29 IST" name="tearDown" finished-at="2020-01-17T21:45:30 IST" duration-ms="597" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.parabank.qa.testcases.WelcomePageTest -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
