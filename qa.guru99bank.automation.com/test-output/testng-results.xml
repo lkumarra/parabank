@@ -1,51 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="3" passed="3" failed="0" skipped="0">
+<testng-results ignored="3" total="4" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2020-01-19T11:03:24Z" name="FREE CRM Application Test Automation Test Suite" finished-at="2020-01-19T11:04:14Z" duration-ms="49132">
+  <suite started-at="2020-01-22T17:00:05Z" name="Default suite" finished-at="2020-01-22T17:00:23Z" duration-ms="17833">
     <groups>
     </groups>
-    <test started-at="2020-01-19T11:03:24Z" name="Free CRM App Test Cases" finished-at="2020-01-19T11:04:14Z" duration-ms="49132">
-      <class name="com.guru99Bank.qa.testcase.HomePageTest">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.guru99Bank.qa.testcase.HomePageTest@38c5cc4c]" started-at="2020-01-19T16:33:40Z" name="setUp" finished-at="2020-01-19T16:33:55Z" duration-ms="14377" status="PASS">
+    <test started-at="2020-01-22T17:00:05Z" name="Default test" finished-at="2020-01-22T17:00:23Z" duration-ms="17833">
+      <class name="com.guru99Bank.qa.testcase.NewCostumerTest">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.guru99Bank.qa.testcase.NewCostumerTest@ec756bd]" started-at="2020-01-22T22:30:05Z" name="setUp" finished-at="2020-01-22T22:30:22Z" duration-ms="16854" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="verifyWelcomePage()[pri:1, instance:com.guru99Bank.qa.testcase.HomePageTest@38c5cc4c]" started-at="2020-01-19T16:33:55Z" name="verifyWelcomePage" finished-at="2020-01-19T16:33:55Z" duration-ms="50" status="PASS">
+        <test-method signature="verifyCostumerNameFieldLength()[pri:4, instance:com.guru99Bank.qa.testcase.NewCostumerTest@ec756bd]" started-at="2020-01-22T22:30:22Z" name="verifyCostumerNameFieldLength" finished-at="2020-01-22T22:30:22Z" duration-ms="292" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- verifyWelcomePage -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.guru99Bank.qa.testcase.HomePageTest@38c5cc4c]" started-at="2020-01-19T16:33:55Z" name="tearDown" finished-at="2020-01-19T16:33:55Z" duration-ms="598" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.guru99Bank.qa.testcase.HomePageTest@38c5cc4c]" started-at="2020-01-19T16:33:55Z" name="setUp" finished-at="2020-01-19T16:34:13Z" duration-ms="17380" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method signature="verifyManagerId()[pri:2, instance:com.guru99Bank.qa.testcase.HomePageTest@38c5cc4c]" started-at="2020-01-19T16:34:13Z" name="verifyManagerId" finished-at="2020-01-19T16:34:13Z" duration-ms="54" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyManagerId -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.guru99Bank.qa.testcase.HomePageTest@38c5cc4c]" started-at="2020-01-19T16:34:13Z" name="tearDown" finished-at="2020-01-19T16:34:14Z" duration-ms="592" status="PASS">
+        </test-method> <!-- verifyCostumerNameFieldLength -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.guru99Bank.qa.testcase.NewCostumerTest@ec756bd]" started-at="2020-01-22T22:30:22Z" name="tearDown" finished-at="2020-01-22T22:30:23Z" duration-ms="665" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-      </class> <!-- com.guru99Bank.qa.testcase.HomePageTest -->
-      <class name="com.guru99Bank.qa.testcase.LoginPageTest">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.guru99Bank.qa.testcase.LoginPageTest@223f3642]" started-at="2020-01-19T16:33:24Z" name="setUp" finished-at="2020-01-19T16:33:40Z" duration-ms="15408" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method signature="verifyUserLoginSuccessfully()[pri:0, instance:com.guru99Bank.qa.testcase.LoginPageTest@223f3642]" started-at="2020-01-19T16:33:40Z" name="verifyUserLoginSuccessfully" finished-at="2020-01-19T16:33:40Z" duration-ms="35" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyUserLoginSuccessfully -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.guru99Bank.qa.testcase.LoginPageTest@223f3642]" started-at="2020-01-19T16:33:40Z" name="tearDown" finished-at="2020-01-19T16:33:40Z" duration-ms="610" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-      </class> <!-- com.guru99Bank.qa.testcase.LoginPageTest -->
-    </test> <!-- Free CRM App Test Cases -->
-  </suite> <!-- FREE CRM Application Test Automation Test Suite -->
+      </class> <!-- com.guru99Bank.qa.testcase.NewCostumerTest -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
 </testng-results>
