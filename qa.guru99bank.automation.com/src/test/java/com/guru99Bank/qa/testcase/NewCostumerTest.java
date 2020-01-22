@@ -49,16 +49,16 @@ public class NewCostumerTest extends Guru99TestBase {
 				"Costumer name field is taking more than 25 characters");
 	}
 
-//	@DataProvider
-//	public Object[][] getDataProvider() {
-//		return Guru99BankUtil.getData("AddNewCostumer");
-//	}
-//
-//	@Test(priority = 4, dataProvider = "getDataProvider")
-//	public void fillNewCostumerForm(String costumerName, String gender, String dob, String address, String city,
-//			String state, String pin, String mobileNumber, String email, String password) {
-//		newCostumer.addNewCostumer(costumerName, gender, dob, address, city, state, pin, mobileNumber, email, password);
-//	}
+	@DataProvider
+	public Object[][] getDataProvider() {
+		return Guru99BankUtil.getData("AddNewCostumer");
+	}
+
+	@Test(priority = 4, dataProvider = "getDataProvider")
+	public void fillNewCostumerForm(String costumerName, String gender, String dob, String address, String city,
+			String state, String pin, String mobileNumber, String email, String password) {
+		newCostumer.addNewCostumer(costumerName, gender, dob, address, city, state, pin, mobileNumber, email, password);
+	}
 
 	@AfterMethod
 	public void tearDown() {
