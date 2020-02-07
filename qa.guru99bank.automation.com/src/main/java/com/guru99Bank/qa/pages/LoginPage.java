@@ -1,47 +1,53 @@
 package com.guru99Bank.qa.pages;
 
-import org.openqa.selenium.WebElement;
-import org.openqa.selenium.support.FindBy;
-import org.openqa.selenium.support.PageFactory;
-
 import com.guru99Bank.qa.base.Guru99TestBase;
 import com.guru99Bank.qa.helper.Helpers;
+import com.guru99Bank.qa.locators.LoginPageLocators;
 
 public class LoginPage extends Guru99TestBase{
 	
-	int time = 30;
+	LoginPageLocators loginPageLocators = LoginPageLocators.getInstance();
+	Helpers helpers = Helpers.getInstance();
+
 	/**
-	 * Webelement to initialize by page factory
+	 * Enter user name in userid field 
+	 * @param userId UserId of the costumer
 	 */
-	@FindBy(name = "uid")
-	WebElement userIdLocator;
-	
-	@FindBy(name = "password")
-	WebElement passwordLocator;
-	
-	@FindBy(name = "btnLogin")
-	WebElement loginButton;
-	
-	@FindBy(name = "btnReset")
-	WebElement resetButton;
-	
-	/**
-	 * Constructor to initialize the page factory
-	 */
-	public LoginPage() {
-		PageFactory.initElements(driver, this);
+	public void setUserName(String userId) {
+		helpers.enterTextIntoTextBoxWithoutClear(loginPageLocators.userIDLocator(), userId);
 	}
 	
 	/**
+	 * Enter password in password field
+	 * @param password Password of the costumer
+	 */
+	public void setPassword(String password) {
+		helpers.enterTextIntoTextBoxWithoutClear(loginPageLocators.passwordLocator(), password);
+	}
+	
+	/**
+	 * Click on login button 
+	 */
+	public void clickOnLoginButton() {
+		helpers.clickOnElement(loginPageLocators.loginButtonLocator());
+	}
+	
+	/**
+	 * Click on reset button
+	 */
+	public void clickOnResetButton() {
+		helpers.clickOnElement(loginPageLocators.resetButtonLocator());
+	}
+	/**
 	 * 
-	 * @param userId
-	 * @param password
+	 * @param userId UserId of the costumer
+	 * @param password Password of the costumer
 	 * @return
 	 */
 	public HomePage login(String userId, String password) {
-		Helpers.sendKeys(userIdLocator, time, userId);
-		Helpers.sendKeys(passwordLocator, time, password);
-		Helpers.click(loginButton, time);
+		this.setUserName(userId);
+		this.setPassword(password);
+		this.clickOnLoginButton();
 		return new HomePage();
 	}
 }

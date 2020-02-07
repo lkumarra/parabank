@@ -6,62 +6,105 @@ import org.openqa.selenium.support.PageFactory;
 
 import com.guru99Bank.qa.base.Guru99TestBase;
 import com.guru99Bank.qa.helper.Helpers;
+import com.guru99Bank.qa.locators.NewCostumerPageLocators;
 
 public class NewCostumerPage extends Guru99TestBase {
-
-	int time = 30;
+	
+	NewCostumerPageLocators newCostumerPageLocators = NewCostumerPageLocators.getInstance();
+	Helpers helpers = Helpers.getInstance();
+	
 	/**
-	 * Web elements to be initialized by using page Page Factory
+	 * 
+	 * @param costumerName
 	 */
-	@FindBy(name = "name")
-	WebElement costumerNameLocator;
-
-	@FindBy(xpath = "//input[@value = 'm']")
-	WebElement maleRadioButton;
-
-	@FindBy(xpath = "//input[@value = 'f']")
-	WebElement femaleRadioButton;
-
-	@FindBy(name = "dob")
-	WebElement dobLocator;
-
-	@FindBy(xpath = "//textarea[@name = 'addr']")
-	WebElement addressLocator;
-
-	@FindBy(name = "city")
-	WebElement cityLocator;
-
-	@FindBy(name = "state")
-	WebElement stateLocator;
-
-	@FindBy(name = "pinno")
-	WebElement pinLocator;
-
-	@FindBy(name = "telephoneno")
-	WebElement mobileLocator;
-
-	@FindBy(name = "emailid")
-	WebElement emailLocator;
-
-	@FindBy(name = "password")
-	WebElement passwordLocator;
-
-	@FindBy(xpath = "//input[@value  = \"Submit\"]")
-	WebElement submitButton;
-
-	@FindBy(xpath = "//input[@value  = \"Reset\"]")
-	WebElement restButton;
-
-	@FindBy(css = "label#message")
-	WebElement costumerNameMessage;
-
-	/**
-	 * Costructor to initialize page factory
-	 */
-	public NewCostumerPage() {
-		PageFactory.initElements(driver, this);
+	public void setCostumerName(String costumerName) {
+		helpers.enterTextIntoTextBoxWithoutClear(newCostumerPageLocators.costumerNameLocator(), costumerName);
 	}
-
+	
+	/**
+	 * 
+	 */
+	public void selectMale() {
+		helpers.clickOnElement(newCostumerPageLocators.maleRadioButton());
+	}
+	
+	/**
+	 * 
+	 */
+	public void selectFemale() {
+		helpers.clickOnElement(newCostumerPageLocators.femaleRadioButton());
+	}
+	
+	/**
+	 * 
+	 * @param dob
+	 */
+	public void setDateOfBirth(String dob) {
+		helpers.enterTextIntoTextBoxWithoutClear(newCostumerPageLocators.dobLocator(), dob);
+	}
+	
+	/**
+	 * 
+	 * @param address
+	 */
+	public void setAddress(String address) {
+		helpers.enterTextIntoTextBoxWithoutClear(newCostumerPageLocators.addressLocator(), address);
+	}
+	
+	/**
+	 * 
+	 * @param state
+	 */
+	public void setState(String state) {
+		helpers.enterTextIntoTextBoxWithoutClear(newCostumerPageLocators.stateLocator(), state);
+	}
+	
+	/**
+	 * 
+	 * @param city
+	 */
+	public void setCity(String city) {
+		helpers.enterTextIntoTextBoxWithoutClear(newCostumerPageLocators.cityLocator(), city);
+	}
+	
+	/**
+	 * 
+	 * @param pin
+	 */
+	public void setPinCode(String pin) {
+		helpers.enterTextIntoTextBoxWithoutClear(newCostumerPageLocators.pinLocator(), pin);
+	}
+	
+	/**
+	 * 
+	 * @param mobileNumber
+	 */
+	public void setMobilenumber(String mobileNumber) {
+		helpers.enterTextIntoTextBoxWithoutClear(newCostumerPageLocators.mobileLocator(), mobileNumber);
+	}
+	
+	/**
+	 * 
+	 * @param email
+	 */
+	public void setEmail(String email) {
+		helpers.enterTextIntoTextBoxWithoutClear(newCostumerPageLocators.emailLocator(), email);
+	}
+	
+	/**
+	 * 
+	 * @param password
+	 */
+	public void setPassword(String password) {
+		helpers.enterTextIntoTextBoxWithoutClear(newCostumerPageLocators.passwordLocator(), password);
+	}
+	
+	/**
+	 * 
+	 */
+	public void clickOnSubmitButton() {
+		helpers.clickOnElement(newCostumerPageLocators.submitButtonLocator());
+	}
 	/**
 	 * Add the details in add new costumer form
 	 * 
@@ -78,21 +121,21 @@ public class NewCostumerPage extends Guru99TestBase {
 	 */
 	public void addNewCostumer(String costumerName, String gender, String dob, String address, String city,
 			String state, String pin, String mobileNumber, String email, String password) {
-		Helpers.sendKeys(costumerNameLocator, time, costumerName);
+		this.setCostumerName(costumerName);
 		if (gender.equals("Male")) {
-			Helpers.click(maleRadioButton, time);
+			this.selectMale();
 		} else {
-			Helpers.click(femaleRadioButton, time);
+			this.selectMale();
 		}
-		Helpers.sendKeys(dobLocator, time, dob);
-		Helpers.sendKeys(addressLocator, time, address);
-		Helpers.sendKeys(cityLocator, time, city);
-		Helpers.sendKeys(stateLocator, time, state);
-		Helpers.sendKeys(pinLocator, time, pin);
-		Helpers.sendKeys(mobileLocator, time, mobileNumber);
-		Helpers.sendKeys(emailLocator, time, email);
-		Helpers.sendKeys(passwordLocator, time, password);
-		Helpers.click(submitButton, time);
+		this.setDateOfBirth(dob);
+		this.setAddress(address);
+		this.setCity(city);
+		this.setState(state);
+		this.setPinCode(pin);
+		this.setMobilenumber(mobileNumber);
+		this.setEmail(email);
+		this.setPassword(password);
+		this.clickOnSubmitButton();
 	}
 
 	/**
@@ -102,14 +145,18 @@ public class NewCostumerPage extends Guru99TestBase {
 	 * @return Return the message while user user enter the invalid characters
 	 */
 	public String costumerNameInvalidCharacterVerify(String invalidCostumerName) {
-		Helpers.sendKeys(costumerNameLocator, time, invalidCostumerName);
-		return Helpers.getText(costumerNameMessage, time);
+		this.setCostumerName(invalidCostumerName);
+		return helpers.getTextOfWebElement(newCostumerPageLocators.costumerNameMessageLocator());
 	}
 
+	/**
+	 * 
+	 * @param maxCharacters
+	 * @return
+	 */
 	public int costumerNameFieldMaxCharacterLength(String maxCharacters) {
-		Helpers.sendKeys(costumerNameLocator, time, maxCharacters);
-		System.out.println(Helpers.getAttribute(costumerNameLocator, time, "value").length());
-		return Helpers.getAttribute(costumerNameLocator, time, "value").length();
+		this.setCostumerName(maxCharacters);
+		return helpers.getAttributeOfWebElement(newCostumerPageLocators.costumerNameLocator(), "Value").length();
 	}
 
 }
