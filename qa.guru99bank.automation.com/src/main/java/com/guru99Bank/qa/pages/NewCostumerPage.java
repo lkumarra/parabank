@@ -1,110 +1,109 @@
 package com.guru99Bank.qa.pages;
 
-import org.openqa.selenium.WebElement;
-import org.openqa.selenium.support.FindBy;
-import org.openqa.selenium.support.PageFactory;
-
-import com.guru99Bank.qa.base.Guru99TestBase;
 import com.guru99Bank.qa.helper.Helpers;
 import com.guru99Bank.qa.locators.NewCostumerPageLocators;
 
-public class NewCostumerPage extends Guru99TestBase {
-	
-	NewCostumerPageLocators newCostumerPageLocators = NewCostumerPageLocators.getInstance();
+public class NewCostumerPage extends NewCostumerPageLocators {
+
 	Helpers helpers = Helpers.getInstance();
-	
+
+	public NewCostumerPage() {
+		super();
+	}
+
 	/**
 	 * 
 	 * @param costumerName
 	 */
 	public void setCostumerName(String costumerName) {
-		helpers.enterTextIntoTextBoxWithoutClear(newCostumerPageLocators.costumerNameLocator(), costumerName);
+		helpers.enterTextIntoTextBoxWithoutClear(costumerNameLocator, costumerName);
 	}
-	
+
 	/**
 	 * 
 	 */
 	public void selectMale() {
-		helpers.clickOnElement(newCostumerPageLocators.maleRadioButton());
+		helpers.clickOnElement(maleRadioButton);
 	}
-	
+
 	/**
 	 * 
 	 */
 	public void selectFemale() {
-		helpers.clickOnElement(newCostumerPageLocators.femaleRadioButton());
+		helpers.clickOnElement(femaleRadioButton);
 	}
-	
+
 	/**
 	 * 
 	 * @param dob
 	 */
 	public void setDateOfBirth(String dob) {
-		helpers.enterTextIntoTextBoxWithoutClear(newCostumerPageLocators.dobLocator(), dob);
+		helpers.enterTextIntoTextBoxWithoutClear(dobLocator, dob);
 	}
-	
+
 	/**
 	 * 
 	 * @param address
 	 */
 	public void setAddress(String address) {
-		helpers.enterTextIntoTextBoxWithoutClear(newCostumerPageLocators.addressLocator(), address);
+		helpers.enterTextIntoTextBoxWithoutClear(addressLocator, address);
 	}
-	
+
 	/**
 	 * 
 	 * @param state
 	 */
 	public void setState(String state) {
-		helpers.enterTextIntoTextBoxWithoutClear(newCostumerPageLocators.stateLocator(), state);
+		helpers.enterTextIntoTextBoxWithoutClear(stateLocator, state);
 	}
-	
+
 	/**
 	 * 
 	 * @param city
 	 */
 	public void setCity(String city) {
-		helpers.enterTextIntoTextBoxWithoutClear(newCostumerPageLocators.cityLocator(), city);
+		helpers.enterTextIntoTextBoxWithoutClear(cityLocator, city);
 	}
-	
+
 	/**
 	 * 
 	 * @param pin
 	 */
 	public void setPinCode(String pin) {
-		helpers.enterTextIntoTextBoxWithoutClear(newCostumerPageLocators.pinLocator(), pin);
+		helpers.enterTextIntoTextBoxWithoutClear(pinLocator, pin);
 	}
-	
+
 	/**
 	 * 
 	 * @param mobileNumber
 	 */
 	public void setMobilenumber(String mobileNumber) {
-		helpers.enterTextIntoTextBoxWithoutClear(newCostumerPageLocators.mobileLocator(), mobileNumber);
+		helpers.enterTextIntoTextBoxWithoutClear(mobileLocator, mobileNumber);
 	}
-	
+
 	/**
 	 * 
 	 * @param email
 	 */
 	public void setEmail(String email) {
-		helpers.enterTextIntoTextBoxWithoutClear(newCostumerPageLocators.emailLocator(), email);
+		helpers.enterTextIntoTextBoxWithoutClear(emailLocator, email);
 	}
-	
+
 	/**
 	 * 
 	 * @param password
 	 */
 	public void setPassword(String password) {
-		helpers.enterTextIntoTextBoxWithoutClear(newCostumerPageLocators.passwordLocator(), password);
+		helpers.enterTextIntoTextBoxWithoutClear(passwordLocator, password);
 	}
-	
+
 	/**
 	 * 
 	 */
 	public void clickOnSubmitButton() {
-		helpers.clickOnElement(newCostumerPageLocators.submitButtonLocator());
+		helpers.clickOnElement(submitLocator);
 	}
+
 	/**
 	 * Add the details in add new costumer form
 	 * 
@@ -146,7 +145,7 @@ public class NewCostumerPage extends Guru99TestBase {
 	 */
 	public String costumerNameInvalidCharacterVerify(String invalidCostumerName) {
 		this.setCostumerName(invalidCostumerName);
-		return helpers.getTextOfWebElement(newCostumerPageLocators.costumerNameMessageLocator());
+		return helpers.getTextOfWebElement(costumerNameMessageLocator);
 	}
 
 	/**
@@ -156,7 +155,7 @@ public class NewCostumerPage extends Guru99TestBase {
 	 */
 	public int costumerNameFieldMaxCharacterLength(String maxCharacters) {
 		this.setCostumerName(maxCharacters);
-		return helpers.getAttributeOfWebElement(newCostumerPageLocators.costumerNameLocator(), "Value").length();
+		return helpers.getAttributeOfWebElement(costumerNameLocator, "Value").length();
 	}
 
 }

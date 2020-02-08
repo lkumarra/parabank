@@ -3,10 +3,11 @@ package com.guru99Bank.qa.base;
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.util.Properties;
+import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
-import org.openqa.selenium.firefox.FirefoxDriver;
+
 
 public class Guru99TestBase {
 	FileInputStream file;
@@ -19,7 +20,7 @@ public class Guru99TestBase {
 	public Guru99TestBase() {
 		try {
 			file = new FileInputStream(
-					"C:\\selenium\\Pom\\PageObjectModel-master\\qa.guru99bank.automation.com\\src\\main\\java\\com\\guru99Bank\\qa\\config\\Guru99Bank.properties");
+					"C:\\Users\\Lavendra rajput\\git\\parabank\\qa.guru99bank.automation.com\\src\\main\\java\\com\\guru99Bank\\qa\\config\\Guru99Bank.properties");
 			prop = new Properties();
 			prop.load(file);
 		} catch (FileNotFoundException e) {
@@ -33,16 +34,19 @@ public class Guru99TestBase {
 	 * This method will initialize the browser to perform testing.
 	 */
 	public static void initialization() {
-		String browserName = prop.getProperty("browser");
-		if (browserName.equals("Chrome")) {
-			System.setProperty("webdriver.chrome.driver", "C:\\selenium\\chromedriver_win32\\chromedriver.exe");
+		if (prop.getProperty("browser").equals("chrome")) {
+			System.setProperty("webdriver.chrome.driver",
+					"C:\\Users\\Lavendra rajput\\git\\parabank\\qa.guru99bank.automation.com\\src\\main\\java\\com\\guru99Bank\\qa\\drivers\\chromedriver.exe");
 			driver = new ChromeDriver();
-		} else if (browserName.equals("Firefox")) {
-			System.setProperty("webdriver.chrome.driver", "C:\\selenium\\chromedriver_win32\\chromedriver.exe");
-			driver = new FirefoxDriver();
+		} else if (prop.getProperty("browser").equals("firefox")) {
+			System.setProperty("webdriver.chrome.driver",
+					"C:\\Users\\Lavendra rajput\\git\\parabank\\qa.guru99bank.automation.com\\src\\main\\java\\com\\guru99Bank\\qa\\drivers\\chromedriver.exe");
+			driver = new ChromeDriver();
 		}
-		driver.manage().deleteAllCookies();
 		driver.manage().window().maximize();
+		driver.manage().deleteAllCookies();
+		driver.manage().timeouts().pageLoadTimeout(30, TimeUnit.SECONDS);
+		driver.get(prop.getProperty("url"));
 	}
 
 }

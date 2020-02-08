@@ -7,182 +7,57 @@ import org.openqa.selenium.support.PageFactory;
 import com.guru99Bank.qa.base.Guru99TestBase;
 
 public class NewCostumerPageLocators extends Guru99TestBase {
-	
-	static NewCostumerPageLocators newCostumerPageLocators;
-	
-	/**
-	 * 
-	 * @return
-	 */
-	public static NewCostumerPageLocators getInstance() {
-		if(newCostumerPageLocators == null) {
-			newCostumerPageLocators = new NewCostumerPageLocators();
-		}
-		return newCostumerPageLocators;
-	}
-	
+
 	/**
 	 * Web elements to be initialized by using page Page Factory
 	 */
 	@FindBy(name = "name")
-	private WebElement costumerName;
+	public static WebElement costumerNameLocator;
 
 	@FindBy(xpath = "//input[@value = 'm']")
-	private WebElement maleRadioButton;
+	public static WebElement maleRadioButton;
 
 	@FindBy(xpath = "//input[@value = 'f']")
-	private WebElement femaleRadioButton;
+	public static WebElement femaleRadioButton;
 
 	@FindBy(name = "dob")
-	private WebElement dob;
+	public static WebElement dobLocator;
 
 	@FindBy(xpath = "//textarea[@name = 'addr']")
-	private WebElement address;
+	public static WebElement addressLocator;
 
 	@FindBy(name = "city")
-	private WebElement city;
+	public static WebElement cityLocator;
 
 	@FindBy(name = "state")
-	private WebElement state;
+	public static WebElement stateLocator;
 
 	@FindBy(name = "pinno")
-	private WebElement pin;
+	public static WebElement pinLocator;
 
 	@FindBy(name = "telephoneno")
-	private WebElement mobile;
+	public static WebElement mobileLocator;
 
 	@FindBy(name = "emailid")
-	private WebElement email;
+	public static WebElement emailLocator;
 
 	@FindBy(name = "password")
-	private WebElement password;
+	public static WebElement passwordLocator;
 
 	@FindBy(xpath = "//input[@value  = \"Submit\"]")
-	private WebElement submit;
+	public static WebElement submitLocator;
 
 	@FindBy(xpath = "//input[@value  = \"Reset\"]")
-	private WebElement restButton;
+	public static WebElement restButtonLocator;
 
 	@FindBy(css = "label#message")
-	private WebElement costumerNameMessage;
+	public static WebElement costumerNameMessageLocator;
 
 	/**
 	 * Costructor to initialize page factory
 	 */
 	public NewCostumerPageLocators() {
 		PageFactory.initElements(driver, this);
-	}
-	
-	/**
-	 * 
-	 * @return
-	 */
-	public WebElement costumerNameLocator() {
-		return this.costumerName;
-	}
-	
-	/**
-	 * 
-	 * @return
-	 */
-	public WebElement maleRadioButton() {
-		return this.maleRadioButton;
-	}
-	
-	/**
-	 * 
-	 * @return
-	 */
-	public WebElement femaleRadioButton() {
-		return this.femaleRadioButton;
-	}
-	
-	/**
-	 * 
-	 * @return
-	 */
-	public WebElement dobLocator() {
-		return this.dob;
-	}
-	
-	/**
-	 * 
-	 * @return
-	 */
-	public WebElement addressLocator() {
-		return this.address;
-	}
-	
-	/**
-	 * 
-	 * @return
-	 */
-	public WebElement cityLocator() {
-		return this.city;
-	}
-	
-	/**
-	 * 
-	 * @return
-	 */
-	public WebElement stateLocator() {
-		return this.state;
-	}
-	
-	/**
-	 * 
-	 * @return
-	 */
-	public WebElement pinLocator() {
-		return this.pin;
-	}
-	
-	/**
-	 * 
-	 * @return
-	 */
-	public WebElement mobileLocator() {
-		return this.mobile;
-	}
-	
-	/**
-	 * 
-	 * @return
-	 */
-	public WebElement emailLocator() {
-		return this.email;
-	}
-	
-	/**
-	 * 
-	 * @return
-	 */
-	public WebElement passwordLocator() {
-		return this.password;
-	}
-	
-	/**
-	 * 
-	 * @return
-	 */
-	public WebElement submitButtonLocator() {
-		return this.submit;
-	}
-	
-	/**
-	 * 
-	 * @return
-	 */
-	public WebElement restButtonLocator() {
-		return this.restButton;
-	}
-	
-	/**
-	 * 
-	 * @return
-	 */
-	public WebElement costumerNameMessageLocator() {
-		return this.costumerNameMessage;
 	}
 
 }

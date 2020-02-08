@@ -25,16 +25,16 @@ public class LoginPageLocators extends Guru99TestBase {
 	 * Webelement to initialize by page factory
 	 */
 	@FindBy(name = "uid")
-	private WebElement userId;
+	public static  WebElement userId;
 	
 	@FindBy(name = "password")
-	private WebElement password;
+	public static WebElement password;
 	
 	@FindBy(name = "btnLogin")
-	private WebElement loginButton;
+	public static WebElement loginButton;
 	
 	@FindBy(name = "btnReset")
-	private WebElement resetButton;
+	public static  WebElement resetButton;
 	
 	/**
 	 * Constructor to initialize the page factory

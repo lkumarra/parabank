@@ -1,21 +1,22 @@
 package com.guru99Bank.qa.pages;
 
 
-import com.guru99Bank.qa.base.Guru99TestBase;
 import com.guru99Bank.qa.helper.Helpers;
 import com.guru99Bank.qa.locators.HomePageLocators;
 
-public class HomePage extends Guru99TestBase {
-	HomePageLocators homePageLocators = HomePageLocators.getInstance();
+public class HomePage extends HomePageLocators {
 	Helpers helpers = Helpers.getInstance();
 
+	public HomePage() {
+		super();
+	}
 	/**
 	 * Return the message of welcome message after user login successfully
 	 * 
 	 * @return
 	 */
 	public String verifyWelcomeMessage() {
-		return helpers.getTextOfWebElement(homePageLocators.welcomeMessageLocator());
+		return helpers.getTextOfWebElement(welcomeMessage);
 	}
 
 	/**
@@ -23,7 +24,7 @@ public class HomePage extends Guru99TestBase {
 	 * @return
 	 */
 	public String verifyManagerId() {
-		return helpers.getTextOfWebElement(homePageLocators.managerIDLocator());
+		return helpers.getTextOfWebElement(managerId);
 	}
 
 	/**
@@ -32,7 +33,7 @@ public class HomePage extends Guru99TestBase {
 	 * @return Return the object of New Costumer page
 	 */
 	public NewCostumerPage clickOnNewCostumerLink() {
-		helpers.clickOnElement(homePageLocators.newCostumerLinkLocator());
+		helpers.clickOnElement(newCostumerLink);
 		return new NewCostumerPage();
 	}
 
@@ -42,7 +43,7 @@ public class HomePage extends Guru99TestBase {
 	 * @return Return the object on Edit costumer page
 	 */
 	public EditCostumerPage clickOnEditCostumerLink() {
-		helpers.clickOnElement(homePageLocators.editCostumerLinkLocator());
+		helpers.clickOnElement(editCostumerLink);
 		return new EditCostumerPage();
 	}
 
@@ -52,7 +53,7 @@ public class HomePage extends Guru99TestBase {
 	 * @return Return the object of Delete costumer page
 	 */
 	public DeleteCostumerPage clickOnDeleteCostumerLink() {
-		helpers.clickOnElement(homePageLocators.deleteCostumerLinkLocator());
+		helpers.clickOnElement(deleteCostumerLink);
 		return new DeleteCostumerPage();
 	}
 
@@ -62,7 +63,7 @@ public class HomePage extends Guru99TestBase {
 	 * @return Return the object of New account page
 	 */
 	public NewAccountPage clickOnNewAccountLink() {
-		helpers.clickOnElement(homePageLocators.newAccountLinkLocator());
+		helpers.clickOnElement(newAccountLink);
 		return new NewAccountPage();
 	}
 
@@ -72,7 +73,7 @@ public class HomePage extends Guru99TestBase {
 	 * @return Return the object of Edit account page
 	 */
 	public EditAccountPage clickOnEditAccountLink() {
-		helpers.clickOnElement(homePageLocators.editAccountLinkLocator());
+		helpers.clickOnElement(editAccountLink);
 		return new EditAccountPage();
 	}
 
@@ -82,7 +83,7 @@ public class HomePage extends Guru99TestBase {
 	 * @return Return the object of Delete account page
 	 */
 	public DeleteAccountPage clickOnDeleteAccountLink() {
-		helpers.clickOnElement(homePageLocators.deleteAccountLinkLocator());
+		helpers.clickOnElement(deleteAccountLink);
 		return new DeleteAccountPage();
 	}
 
@@ -92,7 +93,7 @@ public class HomePage extends Guru99TestBase {
 	 * @return Return the object of Deposit page
 	 */
 	public DepositPage clickOnDepositPageLink() {
-		helpers.clickOnElement(homePageLocators.depositLinkLocator());
+		helpers.clickOnElement(depositLink);
 		return new DepositPage();
 	}
 
@@ -102,7 +103,7 @@ public class HomePage extends Guru99TestBase {
 	 * @return Return the object of Withdrawl page
 	 */
 	public WithdrawlPage clickOnWithDrawlLink() {
-		helpers.clickOnElement(homePageLocators.withdrawlLinkLocator());
+		helpers.clickOnElement(withdrawlLink);
 		return new WithdrawlPage();
 	}
 
@@ -112,7 +113,7 @@ public class HomePage extends Guru99TestBase {
 	 * @return Return the object of Fund Transfer Page
 	 */
 	public FundTransferPage clickOnFundTransferLink() {
-		helpers.clickOnElement(homePageLocators.fundTransferLinkLocator());
+		helpers.clickOnElement(fundTransfer);
 		return new FundTransferPage();
 	}
 
@@ -122,7 +123,7 @@ public class HomePage extends Guru99TestBase {
 	 * @return Return the object of Change password page
 	 */
 	public ChangePasswordPage clickOnChangePasswordLink() {
-		helpers.clickOnElement(homePageLocators.changePasswordLinkLocator());
+		helpers.clickOnElement(changePasswordLink);
 		return new ChangePasswordPage();
 	}
 
@@ -132,7 +133,7 @@ public class HomePage extends Guru99TestBase {
 	 * @return Return the object of Balance Enquiry Page
 	 */
 	public BalanceEnquiryPage clickOnBalanceEnquiryLink() {
-		helpers.clickOnElement(homePageLocators.balanceEnquariyLinkLocator());
+		helpers.clickOnElement(balanceEnquariyLink);
 		return new BalanceEnquiryPage();
 	}
 
@@ -142,7 +143,7 @@ public class HomePage extends Guru99TestBase {
 	 * @return Return the object of Ministatement page
 	 */
 	public MiniStatementPage clickOnMiniStatementLink() {
-		helpers.clickOnElement(homePageLocators.miniStatementLinkLocator());
+		helpers.clickOnElement(miniStatementLink);
 		return new MiniStatementPage();
 	}
 
@@ -152,7 +153,7 @@ public class HomePage extends Guru99TestBase {
 	 * @return Return the object of Costumised page
 	 */
 	public CostumisedPage clickOnCostumisedLink() {
-		helpers.clickOnElement(homePageLocators.costumisedStatementLinkLocator());
+		helpers.clickOnElement(costumisedStatementLink);
 		return new CostumisedPage();
 	}
 
@@ -162,7 +163,7 @@ public class HomePage extends Guru99TestBase {
 	 * @return Return the object of Log out page
 	 */
 	public LogoutPage clickOnLogoutLink() {
-		helpers.clickOnElement(homePageLocators.logOutLinkLocator());
+		helpers.clickOnElement(logOutLink);
 		return new LogoutPage();
 	}
 }

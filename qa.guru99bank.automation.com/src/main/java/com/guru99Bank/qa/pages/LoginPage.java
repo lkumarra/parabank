@@ -1,42 +1,43 @@
 package com.guru99Bank.qa.pages;
 
-import com.guru99Bank.qa.base.Guru99TestBase;
 import com.guru99Bank.qa.helper.Helpers;
 import com.guru99Bank.qa.locators.LoginPageLocators;
 
-public class LoginPage extends Guru99TestBase{
-	
-	LoginPageLocators loginPageLocators = LoginPageLocators.getInstance();
+public class LoginPage extends  LoginPageLocators{
 	Helpers helpers = Helpers.getInstance();
+	
+	public LoginPage() {
+		super();
+	}
 
 	/**
 	 * Enter user name in userid field 
 	 * @param userId UserId of the costumer
 	 */
-	public void setUserName(String userId) {
-		helpers.enterTextIntoTextBoxWithoutClear(loginPageLocators.userIDLocator(), userId);
+	public void setUserName(String userIdcostumer) {
+		helpers.enterTextIntoTextBoxWithoutClear(userId, userIdcostumer);
 	}
 	
 	/**
 	 * Enter password in password field
 	 * @param password Password of the costumer
 	 */
-	public void setPassword(String password) {
-		helpers.enterTextIntoTextBoxWithoutClear(loginPageLocators.passwordLocator(), password);
+	public void setPassword(String passwordCostumer) {
+		helpers.enterTextIntoTextBoxWithoutClear(password, passwordCostumer);
 	}
 	
 	/**
 	 * Click on login button 
 	 */
 	public void clickOnLoginButton() {
-		helpers.clickOnElement(loginPageLocators.loginButtonLocator());
+		helpers.clickOnElement(loginButton);
 	}
 	
 	/**
 	 * Click on reset button
 	 */
 	public void clickOnResetButton() {
-		helpers.clickOnElement(loginPageLocators.resetButtonLocator());
+		helpers.clickOnElement(resetButton);
 	}
 	/**
 	 * 
