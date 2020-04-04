@@ -18,7 +18,6 @@ public class NewCostumerPage extends NewCostumerPageLocators {
 	public void setCostumerName(String costumerName) {
 		helpers.enterTextIntoTextBoxWithoutClear(costumerNameLocator, costumerName);
 	}
-
 	/**
 	 * 
 	 */

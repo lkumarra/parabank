@@ -24,7 +24,7 @@
     <div class="top-banner-root">
       <span class="top-banner-title-font">Test results</span>
       <br/>
-      <span class="top-banner-font-1">1 suite</span>
+      <span class="top-banner-font-1">1 suite, 1 failed test</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -38,7 +38,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" class="navigator-link" panel-name="suite-GURU99BANK_AUTOMATION_TEST_SUITE">
-              <span class="suite-name border-passed">GURU99BANK AUTOMATION TEST SUITE</span>
+              <span class="suite-name border-failed">GURU99BANK AUTOMATION TEST SUITE</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -91,7 +91,21 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">3 methods,   3 passed</span>
+                    <span class="method-stats">3 methods, 1 failed,   2 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-GURU99BANK_AUTOMATION_TEST_SUITE" class="hide-methods failed suite-GURU99BANK_AUTOMATION_TEST_SUITE"> (hide)</a> <!-- hide-methods failed suite-GURU99BANK_AUTOMATION_TEST_SUITE -->
+                      <a href="#" panel-name="suite-GURU99BANK_AUTOMATION_TEST_SUITE" class="show-methods failed suite-GURU99BANK_AUTOMATION_TEST_SUITE"> (show)</a> <!-- show-methods failed suite-GURU99BANK_AUTOMATION_TEST_SUITE -->
+                    </span>
+                    <div class="method-list-content failed suite-GURU99BANK_AUTOMATION_TEST_SUITE">
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-GURU99BANK_AUTOMATION_TEST_SUITE" title="com.guru99Bank.qa.testcase.HomePageTest" hash-for-method="verifyManagerId">verifyManagerId</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-GURU99BANK_AUTOMATION_TEST_SUITE -->
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -100,11 +114,6 @@
                       <a href="#" panel-name="suite-GURU99BANK_AUTOMATION_TEST_SUITE" class="show-methods passed suite-GURU99BANK_AUTOMATION_TEST_SUITE"> (show)</a> <!-- show-methods passed suite-GURU99BANK_AUTOMATION_TEST_SUITE -->
                     </span>
                     <div class="method-list-content passed suite-GURU99BANK_AUTOMATION_TEST_SUITE">
-                      <span>
-                        <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-GURU99BANK_AUTOMATION_TEST_SUITE" title="com.guru99Bank.qa.testcase.HomePageTest" hash-for-method="verifyManagerId">verifyManagerId</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
                       <span>
                         <img width="3%" src="passed.png"/>
                         <a href="#" class="method navigator-link" panel-name="suite-GURU99BANK_AUTOMATION_TEST_SUITE" title="com.guru99Bank.qa.testcase.LoginPageTest" hash-for-method="verifyUserLoginSuccessfully">verifyUserLoginSuccessfully</a> <!-- method navigator-link -->
@@ -127,9 +136,9 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-GURU99BANK_AUTOMATION_TEST_SUITE" class="panel GURU99BANK_AUTOMATION_TEST_SUITE">
-          <div class="suite-GURU99BANK_AUTOMATION_TEST_SUITE-class-passed">
+          <div class="suite-GURU99BANK_AUTOMATION_TEST_SUITE-class-failed">
             <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
+              <img src="failed.png"/>
               <span class="class-name">com.guru99Bank.qa.testcase.HomePageTest</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
@@ -138,8 +147,21 @@
                   <a name="verifyManagerId">
                   </a> <!-- verifyManagerId -->
                   <span class="method-name">verifyManagerId</span>
+                  <div class="stack-trace">java.lang.AssertionError: expected [Manger Id : mngr242402] but found [Manger Id : mngr251216]
+	at com.guru99Bank.qa.testcase.HomePageTest.verifyManagerId(HomePageTest.java:49)
+	at java.util.ArrayList.forEach(Unknown Source)
+... Removed 32 stack frames
+</div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-GURU99BANK_AUTOMATION_TEST_SUITE-class-failed -->
+          <div class="suite-GURU99BANK_AUTOMATION_TEST_SUITE-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.guru99Bank.qa.testcase.HomePageTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
                   <a name="verifyWelcomePage">
@@ -225,20 +247,20 @@ data.addRows(3);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'verifyManagerId')
 data.setCell(0, 2, 'com.guru99Bank.qa.testcase.HomePageTest')
-data.setCell(0, 3, 253);
+data.setCell(0, 3, 51);
 data.setCell(1, 0, 1)
 data.setCell(1, 1, 'verifyWelcomePage')
 data.setCell(1, 2, 'com.guru99Bank.qa.testcase.HomePageTest')
-data.setCell(1, 3, 200);
+data.setCell(1, 3, 49);
 data.setCell(2, 0, 2)
 data.setCell(2, 1, 'verifyUserLoginSuccessfully')
 data.setCell(2, 2, 'com.guru99Bank.qa.testcase.LoginPageTest')
-data.setCell(2, 3, 46);
+data.setCell(2, 3, 13);
 window.suiteTableData['GURU99BANK_AUTOMATION_TEST_SUITE']= { tableData: data, tableDiv: 'times-div-GURU99BANK_AUTOMATION_TEST_SUITE'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 499 ms</span>
+              <span class="suite-total-time">Total running time: 113 ms</span>
               <div id="times-div-GURU99BANK_AUTOMATION_TEST_SUITE">
               </div> <!-- times-div-GURU99BANK_AUTOMATION_TEST_SUITE -->
             </div> <!-- times-div -->
@@ -271,38 +293,40 @@ return data;
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">verifyUserLoginSuccessfully</span>
-                <span class="method-start">24951 ms</span>
+                <span class="method-start">28339 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">25007 ms</span>
+                <span class="method-start">28352 ms</span>
               </div> <!-- configuration-method after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">com.guru99Bank.qa.testcase.HomePageTest</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
                 <span class="method-name">setUp</span>
-                <span class="method-start">25801 ms</span>
+                <span class="method-start">28962 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">verifyWelcomePage</span>
-                <span class="method-start">46048 ms</span>
+                <span class="method-start">46955 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">46253 ms</span>
+                <span class="method-start">47006 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">setUp</span>
-                <span class="method-start">47061 ms</span>
+                <span class="method-start">47596 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
+                <img src="failed.png">
+                </img>
                 <span class="method-name">verifyManagerId</span>
-                <span class="method-start">64410 ms</span>
+                <span class="method-start">65418 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">64668 ms</span>
+                <span class="method-start">65885 ms</span>
               </div> <!-- configuration-method after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

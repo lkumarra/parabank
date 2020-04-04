@@ -51,9 +51,7 @@ public class Guru99BankUtil extends Guru99TestBase {
 
 		try {
 			book = WorkbookFactory.create(file);
-		} catch (InvalidFormatException e) {
-			e.printStackTrace();
-		} catch (IOException e) {
+		} catch (Exception e) {
 			e.printStackTrace();
 		}
 		sheet = book.getSheet(sheetName);
@@ -65,5 +63,7 @@ public class Guru99BankUtil extends Guru99TestBase {
 		}
 		return data;
 	}
+	
+	
 
 }

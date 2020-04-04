@@ -14,8 +14,6 @@
 		<classes>
 			<class name="com.guru99Bank.qa.testcase.LoginPageTest"></class>
 			<class name="com.guru99Bank.qa.testcase.HomePageTest"></class>
-			<!-- <class name="com.crm.qa.testcases.ContactsPageTest"></class> -->
-
 		</classes>
 	</test>
 </suite>
