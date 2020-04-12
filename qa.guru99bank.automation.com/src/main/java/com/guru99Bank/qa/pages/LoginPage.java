@@ -20,9 +20,7 @@ public class LoginPage extends  LoginPageLocators implements ILoginPage{
 	 * @param userId UserId of the costumer
 	 */
 	public void setUserName(String userIdcostumer) {
-		logger.info("setUserName() method is executing");
 		helpers.enterTextIntoTextBoxWithoutClear(userId, userIdcostumer);
-		logger.info("costumer id "+userIdcostumer+"is filled ");
 	}
 	
 	/**
@@ -30,27 +28,21 @@ public class LoginPage extends  LoginPageLocators implements ILoginPage{
 	 * @param password Password of the costumer
 	 */
 	public void setPassword(String passwordCostumer) {
-		logger.info("setPassword() method is executing ");
 		helpers.enterTextIntoTextBoxWithoutClear(password, passwordCostumer);
-		logger.info("Password "+ passwordCostumer+ "is filled");
 	}
 	
 	/**
 	 * Click on login button 
 	 */
 	public void clickOnLoginButton() {
-		logger.info("clickOnLoginButton() method is executing " );
 		helpers.clickOnElement(loginButton);
-		logger.info("Click on login button");
 	}
 	
 	/**
 	 * Click on reset button
 	 */
 	public void clickOnResetButton() {
-		logger.info("clickOnResetButton() method is executing ");
 		helpers.clickOnElement(resetButton);
-		logger.info("Click on reset button");
 	}
 	/**
 	 * 
@@ -59,12 +51,13 @@ public class LoginPage extends  LoginPageLocators implements ILoginPage{
 	 * @return
 	 */
 	public HomePage login(String userId, String password) {
-		logger.info("login() method is executing " );
+		logger.info("login is started" );
 		this.setUserName(userId);
-		logger.info("User id "+userId+ "is filled");
+		logger.info("Username " + userId + "is entered");
 		this.setPassword(password);
-		logger.info("User id "+password+ "is filled");
+		logger.info("Password "+password+ "is entered");
 		this.clickOnLoginButton();
+		logger.info("Clicked on login Button");
 		return new HomePage();
 	}
 }

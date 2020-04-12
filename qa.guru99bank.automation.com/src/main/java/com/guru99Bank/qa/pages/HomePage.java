@@ -20,7 +20,6 @@ public class HomePage extends HomePageLocators implements IHomePage {
 	 * @return
 	 */
 	public String verifyWelcomeMessage() {
-		logger.info("verifyWelcomeMessage() method is executing");
 		return helpers.getTextOfWebElement(welcomeMessage);
 	}
 
@@ -29,7 +28,6 @@ public class HomePage extends HomePageLocators implements IHomePage {
 	 * @return
 	 */
 	public String verifyManagerId() {
-		logger.info("verifyManagerId() method is executing");
 		return helpers.getTextOfWebElement(managerId);
 	}
 
@@ -39,9 +37,7 @@ public class HomePage extends HomePageLocators implements IHomePage {
 	 * @return Return the object of New Costumer page
 	 */
 	public NewCostumerPage clickOnNewCostumerLink() {
-		logger.info("clickOnNewCostumerLink() method is executing");
 		helpers.clickOnElement(newCostumerLink);
-		logger.info("Click on new costumer link present on homepage");
 		return new NewCostumerPage();
 	}
 

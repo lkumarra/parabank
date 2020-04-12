@@ -1,0 +1,229 @@
+2020-04-05 14:33:51 Guru99TestBase [INFO] The Guru99Bank.properties file loaded successfullly
+2020-04-05 14:33:51 HomePageTest [INFO] ********************************Setup started*************************
+2020-04-05 14:33:57 Guru99TestBase [INFO] Chrome driver launched successfully
+2020-04-05 14:34:02 Guru99TestBase [INFO] Window is maximized 
+2020-04-05 14:34:02 Guru99TestBase [INFO] Cookies are deleted successfully
+2020-04-05 14:34:08 Guru99TestBase [INFO] http://www.demo.guru99.com/V4/index.phpis launched successfully
+2020-04-05 14:34:08 Guru99TestBase [INFO] The Guru99Bank.properties file loaded successfullly
+2020-04-05 14:34:08 Guru99TestBase [INFO] The Guru99Bank.properties file loaded successfullly
+2020-04-05 14:34:08 LoginPage [INFO] login() method is executing 
+2020-04-05 14:34:08 LoginPage [INFO] setUserName() method is executing
+2020-04-05 14:34:09 LoginPage [INFO] costumer id mngr251216is filled 
+2020-04-05 14:34:09 LoginPage [INFO] User id mngr251216is filled
+2020-04-05 14:34:09 LoginPage [INFO] setPassword() method is executing 
+2020-04-05 14:34:09 LoginPage [INFO] Password rumapEhis filled
+2020-04-05 14:34:09 LoginPage [INFO] User id rumapEhis filled
+2020-04-05 14:34:09 LoginPage [INFO] clickOnLoginButton() method is executing 
+2020-04-05 14:34:13 LoginPage [INFO] Click on login button
+2020-04-05 14:34:13 Guru99TestBase [INFO] The Guru99Bank.properties file loaded successfullly
+2020-04-05 14:34:13 HomePageTest [INFO] Login with username mngr251216and password rumapEh
+2020-04-05 14:34:13 HomePageTest [INFO] *******************************Setup Completed************************
+2020-04-05 14:34:13 HomePageTest [INFO] *******************************Test case started*************************
+2020-04-05 14:34:13 HomePageTest [INFO] ********************************verifyWelcomePage()***********************
+2020-04-05 14:34:13 HomePage [INFO] verifyWelcomeMessage() method is executing
+2020-04-05 14:34:13 HomePageTest [INFO] *********************************Test case completed*********************
+2020-04-05 14:34:14 HomePageTest [INFO] *****************************Chrome is closed****************************
+2020-04-05 14:34:14 HomePageTest [INFO] ********************************Setup started*************************
+2020-04-05 14:34:19 Guru99TestBase [INFO] Chrome driver launched successfully
+2020-04-05 14:34:23 Guru99TestBase [INFO] Window is maximized 
+2020-04-05 14:34:23 Guru99TestBase [INFO] Cookies are deleted successfully
+2020-04-05 14:34:29 Guru99TestBase [INFO] http://www.demo.guru99.com/V4/index.phpis launched successfully
+2020-04-05 14:34:29 Guru99TestBase [INFO] The Guru99Bank.properties file loaded successfullly
+2020-04-05 14:34:29 LoginPage [INFO] login() method is executing 
+2020-04-05 14:34:29 LoginPage [INFO] setUserName() method is executing
+2020-04-05 14:34:29 LoginPage [INFO] costumer id mngr251216is filled 
+2020-04-05 14:34:29 LoginPage [INFO] User id mngr251216is filled
+2020-04-05 14:34:29 LoginPage [INFO] setPassword() method is executing 
+2020-04-05 14:34:30 LoginPage [INFO] Password rumapEhis filled
+2020-04-05 14:34:30 LoginPage [INFO] User id rumapEhis filled
+2020-04-05 14:34:30 LoginPage [INFO] clickOnLoginButton() method is executing 
+2020-04-05 14:34:33 LoginPage [INFO] Click on login button
+2020-04-05 14:34:33 Guru99TestBase [INFO] The Guru99Bank.properties file loaded successfullly
+2020-04-05 14:34:33 HomePageTest [INFO] Login with username mngr251216and password rumapEh
+2020-04-05 14:34:33 HomePageTest [INFO] *******************************Setup Completed************************
+2020-04-05 14:34:33 HomePageTest [INFO] *********************************Test case started**********************
+2020-04-05 14:34:33 HomePageTest [INFO] **************************************verifyManagerId()******************
+2020-04-05 14:34:33 HomePage [INFO] verifyManagerId() method is executing
+2020-04-05 14:34:34 HomePageTest [INFO] *****************************Chrome is closed****************************
+2020-04-05 14:37:25 Guru99TestBase [INFO] The Guru99Bank.properties file loaded successfullly
+2020-04-05 14:37:26 HomePageTest [INFO] ********************************Setup started*************************
+2020-04-05 14:37:32 Guru99TestBase [INFO] Chrome driver launched successfully
+2020-04-05 14:37:36 Guru99TestBase [INFO] Window is maximized 
+2020-04-05 14:37:36 Guru99TestBase [INFO] Cookies are deleted successfully
+2020-04-05 14:37:48 Guru99TestBase [INFO] http://www.demo.guru99.com/V4/index.phpis launched successfully
+2020-04-05 14:37:48 Guru99TestBase [INFO] The Guru99Bank.properties file loaded successfullly
+2020-04-05 14:37:48 Guru99TestBase [INFO] The Guru99Bank.properties file loaded successfullly
+2020-04-05 14:37:48 LoginPage [INFO] login() method is executing 
+2020-04-05 14:37:48 LoginPage [INFO] setUserName() method is executing
+2020-04-05 14:37:49 LoginPage [INFO] costumer id mngr251216is filled 
+2020-04-05 14:37:49 LoginPage [INFO] User id mngr251216is filled
+2020-04-05 14:37:49 LoginPage [INFO] setPassword() method is executing 
+2020-04-05 14:37:49 LoginPage [INFO] Password rumapEhis filled
+2020-04-05 14:37:49 LoginPage [INFO] User id rumapEhis filled
+2020-04-05 14:37:49 LoginPage [INFO] clickOnLoginButton() method is executing 
+2020-04-05 14:37:52 LoginPage [INFO] Click on login button
+2020-04-05 14:37:52 Guru99TestBase [INFO] The Guru99Bank.properties file loaded successfullly
+2020-04-05 14:37:52 HomePageTest [INFO] Login with username mngr251216and password rumapEh
+2020-04-05 14:37:52 HomePageTest [INFO] *******************************Setup Completed************************
+2020-04-05 14:37:52 HomePageTest [INFO] *******************************Test case started*************************
+2020-04-05 14:37:52 HomePageTest [INFO] ********************************verifyWelcomePage()***********************
+2020-04-05 14:37:52 HomePage [INFO] verifyWelcomeMessage() method is executing
+2020-04-05 14:37:52 HomePageTest [INFO] *********************************Test case completed*********************
+2020-04-05 14:37:52 HomePageTest [INFO] *****************************Chrome is closed****************************
+2020-04-05 14:37:52 HomePageTest [INFO] ********************************Setup started*************************
+2020-04-05 14:37:58 Guru99TestBase [INFO] Chrome driver launched successfully
+2020-04-05 14:38:02 Guru99TestBase [INFO] Window is maximized 
+2020-04-05 14:38:02 Guru99TestBase [INFO] Cookies are deleted successfully
+2020-04-05 14:38:07 Guru99TestBase [INFO] http://www.demo.guru99.com/V4/index.phpis launched successfully
+2020-04-05 14:38:07 Guru99TestBase [INFO] The Guru99Bank.properties file loaded successfullly
+2020-04-05 14:38:07 LoginPage [INFO] login() method is executing 
+2020-04-05 14:38:07 LoginPage [INFO] setUserName() method is executing
+2020-04-05 14:38:07 LoginPage [INFO] costumer id mngr251216is filled 
+2020-04-05 14:38:07 LoginPage [INFO] User id mngr251216is filled
+2020-04-05 14:38:07 LoginPage [INFO] setPassword() method is executing 
+2020-04-05 14:38:08 LoginPage [INFO] Password rumapEhis filled
+2020-04-05 14:38:08 LoginPage [INFO] User id rumapEhis filled
+2020-04-05 14:38:08 LoginPage [INFO] clickOnLoginButton() method is executing 
+2020-04-05 14:38:10 LoginPage [INFO] Click on login button
+2020-04-05 14:38:10 Guru99TestBase [INFO] The Guru99Bank.properties file loaded successfullly
+2020-04-05 14:38:10 HomePageTest [INFO] Login with username mngr251216and password rumapEh
+2020-04-05 14:38:10 HomePageTest [INFO] *******************************Setup Completed************************
+2020-04-05 14:38:10 HomePageTest [INFO] *********************************Test case started**********************
+2020-04-05 14:38:10 HomePageTest [INFO] **************************************verifyManagerId()******************
+2020-04-05 14:38:10 HomePage [INFO] verifyManagerId() method is executing
+2020-04-05 14:38:11 HomePageTest [INFO] *****************************Chrome is closed****************************
+2020-04-05 14:40:05 Guru99TestBase [INFO] The Guru99Bank.properties file loaded successfullly
+2020-04-05 14:40:05 HomePageTest [INFO] ********************************Setup started*************************
+2020-04-05 14:42:22 Guru99TestBase [INFO] The Guru99Bank.properties file loaded successfullly
+2020-04-05 14:42:22 HomePageTest [INFO] ********************************Setup started*************************
+2020-04-05 14:44:11 Guru99TestBase [INFO] The Guru99Bank.properties file loaded successfullly
+2020-04-05 14:44:11 HomePageTest [INFO] ********************************Setup started*************************
+2020-04-05 14:44:18 Guru99TestBase [INFO] Chrome driver launched successfully
+2020-04-05 14:44:22 Guru99TestBase [INFO] Window is maximized 
+2020-04-05 14:44:22 Guru99TestBase [INFO] Cookies are deleted successfully
+2020-04-05 14:44:28 Guru99TestBase [INFO] http://www.demo.guru99.com/V4/index.phpis launched successfully
+2020-04-05 14:44:28 Guru99TestBase [INFO] The Guru99Bank.properties file loaded successfullly
+2020-04-05 14:44:28 Guru99TestBase [INFO] The Guru99Bank.properties file loaded successfullly
+2020-04-05 14:44:28 LoginPage [INFO] login() method is executing 
+2020-04-05 14:44:28 LoginPage [INFO] setUserName() method is executing
+2020-04-05 14:44:29 LoginPage [INFO] costumer id mngr251216is filled 
+2020-04-05 14:44:29 LoginPage [INFO] User id mngr251216is filled
+2020-04-05 14:44:29 LoginPage [INFO] setPassword() method is executing 
+2020-04-05 14:44:29 LoginPage [INFO] Password rumapEhis filled
+2020-04-05 14:44:29 LoginPage [INFO] User id rumapEhis filled
+2020-04-05 14:44:29 LoginPage [INFO] clickOnLoginButton() method is executing 
+2020-04-05 14:44:32 LoginPage [INFO] Click on login button
+2020-04-05 14:44:32 Guru99TestBase [INFO] The Guru99Bank.properties file loaded successfullly
+2020-04-05 14:44:32 HomePageTest [INFO] Login with username mngr251216and password rumapEh
+2020-04-05 14:44:32 HomePageTest [INFO] *******************************Setup Completed************************
+2020-04-05 14:44:32 HomePageTest [INFO] *******************************Test case started*************************
+2020-04-05 14:44:32 HomePageTest [INFO] ********************************verifyWelcomePage()***********************
+2020-04-05 14:44:32 HomePage [INFO] verifyWelcomeMessage() method is executing
+2020-04-05 14:44:32 HomePageTest [INFO] *********************************Test case completed*********************
+2020-04-05 14:44:33 HomePageTest [INFO] *****************************Chrome is closed****************************
+2020-04-05 14:44:33 HomePageTest [INFO] ********************************Setup started*************************
+2020-04-05 14:44:39 Guru99TestBase [INFO] Chrome driver launched successfully
+2020-04-05 14:44:43 Guru99TestBase [INFO] Window is maximized 
+2020-04-05 14:44:43 Guru99TestBase [INFO] Cookies are deleted successfully
+2020-04-05 14:44:52 Guru99TestBase [INFO] http://www.demo.guru99.com/V4/index.phpis launched successfully
+2020-04-05 14:44:52 Guru99TestBase [INFO] The Guru99Bank.properties file loaded successfullly
+2020-04-05 14:44:52 LoginPage [INFO] login() method is executing 
+2020-04-05 14:44:52 LoginPage [INFO] setUserName() method is executing
+2020-04-05 14:44:52 LoginPage [INFO] costumer id mngr251216is filled 
+2020-04-05 14:44:52 LoginPage [INFO] User id mngr251216is filled
+2020-04-05 14:44:52 LoginPage [INFO] setPassword() method is executing 
+2020-04-05 14:44:52 LoginPage [INFO] Password rumapEhis filled
+2020-04-05 14:44:52 LoginPage [INFO] User id rumapEhis filled
+2020-04-05 14:44:52 LoginPage [INFO] clickOnLoginButton() method is executing 
+2020-04-05 14:44:55 LoginPage [INFO] Click on login button
+2020-04-05 14:44:55 Guru99TestBase [INFO] The Guru99Bank.properties file loaded successfullly
+2020-04-05 14:44:55 HomePageTest [INFO] Login with username mngr251216and password rumapEh
+2020-04-05 14:44:55 HomePageTest [INFO] *******************************Setup Completed************************
+2020-04-05 14:44:55 HomePageTest [INFO] *********************************Test case started**********************
+2020-04-05 14:44:55 HomePageTest [INFO] **************************************verifyManagerId()******************
+2020-04-05 14:44:55 HomePage [INFO] verifyManagerId() method is executing
+2020-04-05 14:44:56 HomePageTest [INFO] *****************************Chrome is closed****************************
+2020-04-05 14:47:25 Guru99TestBase [INFO] The Guru99Bank.properties file loaded successfullly
+2020-04-05 14:47:25 HomePageTest [INFO] ********************************Setup started*************************
+2020-04-05 14:47:31 Guru99TestBase [INFO] Chrome driver launched successfully
+2020-04-05 14:47:35 Guru99TestBase [INFO] Window is maximized 
+2020-04-05 14:47:35 Guru99TestBase [INFO] Cookies are deleted successfully
+2020-04-05 14:47:42 Guru99TestBase [INFO] http://www.demo.guru99.com/V4/index.phpis launched successfully
+2020-04-05 14:47:42 Guru99TestBase [INFO] The Guru99Bank.properties file loaded successfullly
+2020-04-05 14:47:42 Guru99TestBase [INFO] The Guru99Bank.properties file loaded successfullly
+2020-04-05 14:47:42 LoginPage [INFO] login() method is executing 
+2020-04-05 14:47:42 LoginPage [INFO] setUserName() method is executing
+2020-04-05 14:47:42 LoginPage [INFO] costumer id mngr251216is filled 
+2020-04-05 14:47:42 LoginPage [INFO] User id mngr251216is filled
+2020-04-05 14:47:42 LoginPage [INFO] setPassword() method is executing 
+2020-04-05 14:47:43 LoginPage [INFO] Password rumapEhis filled
+2020-04-05 14:47:43 LoginPage [INFO] User id rumapEhis filled
+2020-04-05 14:47:43 LoginPage [INFO] clickOnLoginButton() method is executing 
+2020-04-05 14:47:46 LoginPage [INFO] Click on login button
+2020-04-05 14:47:46 Guru99TestBase [INFO] The Guru99Bank.properties file loaded successfullly
+2020-04-05 14:47:46 HomePageTest [INFO] Login with username mngr251216and password rumapEh
+2020-04-05 14:47:46 HomePageTest [INFO] *******************************Setup Completed************************
+2020-04-05 14:47:46 HomePageTest [INFO] *********************************Test case started**********************
+2020-04-05 14:47:46 HomePageTest [INFO] **************************************verifyManagerId()******************
+2020-04-05 14:47:46 HomePage [INFO] verifyManagerId() method is executing
+2020-04-05 14:47:47 HomePageTest [INFO] *****************************Chrome is closed****************************
+2020-04-05 15:35:21 Guru99TestBase [INFO] Properties file loaded
+2020-04-05 15:35:21 Guru99TestBase [INFO] Properties file loaded
+2020-04-05 15:35:21 Guru99TestBase [INFO] Properties file loaded
+2020-04-05 15:35:21 ListenerTest [INFO] Execution start on Sun Apr 05 15:35:21 IST 2020
+2020-04-05 15:35:21 LoginPageTest [INFO] Set up started for LoginPageTest
+2020-04-05 15:35:28 Guru99TestBase [INFO] Chrome driver launched successfully
+2020-04-05 15:35:32 Guru99TestBase [INFO] Window is maximized 
+2020-04-05 15:35:32 Guru99TestBase [INFO] Cookies are deleted 
+2020-04-05 15:35:42 Guru99TestBase [INFO] http://www.demo.guru99.com/V4/index.phpis entered
+2020-04-05 15:35:42 Guru99TestBase [INFO] Properties file loaded
+2020-04-05 15:35:42 Guru99TestBase [INFO] Properties file loaded
+2020-04-05 15:35:42 LoginPage [INFO] login is started
+2020-04-05 15:35:43 LoginPage [INFO] Username mngr251216is entered
+2020-04-05 15:35:43 LoginPage [INFO] Password rumapEhis entered
+2020-04-05 15:35:53 LoginPage [INFO] Clicked on login Button
+2020-04-05 15:35:53 Guru99TestBase [INFO] Properties file loaded
+2020-04-05 15:35:53 LoginPageTest [INFO] Login with username mngr251216and password rumapEh
+2020-04-05 15:35:53 LoginPageTest [INFO] Setup Completed for LoginPageTest
+2020-04-05 15:35:53 ListenerTest [INFO] verifyUserLoginSuccessfully is started on : Sun Apr 05 15:35:53 IST 2020
+2020-04-05 15:35:53 LoginPageTest [INFO] verifyUserLoginSuccessfully is started
+2020-04-05 15:35:53 LoginPageTest [INFO] The title of page is Guru99 Bank Manager HomePage
+2020-04-05 15:35:54 LoginPageTest [INFO] verifyUserLoginSuccessfully is completed
+2020-04-05 15:35:54 ListenerTest [INFO] verifyUserLoginSuccessfully is passed on : Sun Apr 05 15:35:54 IST 2020
+2020-04-05 15:35:54 LoginPageTest [INFO] Browser is closed
+2020-04-05 15:35:54 HomePageTest [INFO] Set up started for HomePageTest
+2020-04-05 15:35:59 Guru99TestBase [INFO] Chrome driver launched successfully
+2020-04-05 15:36:03 Guru99TestBase [INFO] Window is maximized 
+2020-04-05 15:36:03 Guru99TestBase [INFO] Cookies are deleted 
+2020-04-05 15:36:18 Guru99TestBase [INFO] http://www.demo.guru99.com/V4/index.phpis entered
+2020-04-05 15:36:18 Guru99TestBase [INFO] Properties file loaded
+2020-04-05 15:36:18 LoginPage [INFO] login is started
+2020-04-05 15:36:18 LoginPage [INFO] Username mngr251216is entered
+2020-04-05 15:36:19 LoginPage [INFO] Password rumapEhis entered
+2020-04-05 15:36:21 LoginPage [INFO] Clicked on login Button
+2020-04-05 15:36:21 Guru99TestBase [INFO] Properties file loaded
+2020-04-05 15:36:21 HomePageTest [INFO] Login with username mngr251216and password rumapEh
+2020-04-05 15:36:21 HomePageTest [INFO] Setup Completed for HomePageTest
+2020-04-05 15:36:21 ListenerTest [INFO] verifyWelcomePage is started on : Sun Apr 05 15:36:21 IST 2020
+2020-04-05 15:36:21 HomePageTest [INFO] verifyWelcomePage Testcase started
+2020-04-05 15:36:21 HomePageTest [INFO] verifyWelcomePage Testcase  completed
+2020-04-05 15:36:21 ListenerTest [INFO] verifyWelcomePage is passed on : Sun Apr 05 15:36:21 IST 2020
+2020-04-05 15:36:22 HomePageTest [INFO] Browser is closed
+2020-04-05 15:36:22 HomePageTest [INFO] Set up started for HomePageTest
+2020-04-05 15:36:27 Guru99TestBase [INFO] Chrome driver launched successfully
+2020-04-05 15:36:31 Guru99TestBase [INFO] Window is maximized 
+2020-04-05 15:36:31 Guru99TestBase [INFO] Cookies are deleted 
+2020-04-05 15:36:38 Guru99TestBase [INFO] http://www.demo.guru99.com/V4/index.phpis entered
+2020-04-05 15:36:38 Guru99TestBase [INFO] Properties file loaded
+2020-04-05 15:36:38 LoginPage [INFO] login is started
+2020-04-05 15:36:39 LoginPage [INFO] Username mngr251216is entered
+2020-04-05 15:36:39 LoginPage [INFO] Password rumapEhis entered
+2020-04-05 15:36:42 LoginPage [INFO] Clicked on login Button
+2020-04-05 15:36:42 Guru99TestBase [INFO] Properties file loaded
+2020-04-05 15:36:42 HomePageTest [INFO] Login with username mngr251216and password rumapEh
+2020-04-05 15:36:42 HomePageTest [INFO] Setup Completed for HomePageTest
+2020-04-05 15:36:42 ListenerTest [INFO] verifyManagerId is started on : Sun Apr 05 15:36:42 IST 2020
+2020-04-05 15:36:42 HomePageTest [INFO] verifyManagerId Testcase started
+2020-04-05 15:36:42 ListenerTest [ERROR] verifyManagerId is failed on : Sun Apr 05 15:36:42 IST 2020
+2020-04-05 15:36:44 HomePageTest [INFO] Browser is closed
+2020-04-05 15:36:44 ListenerTest [INFO] Execution compeleted on Sun Apr 05 15:36:44 IST 2020

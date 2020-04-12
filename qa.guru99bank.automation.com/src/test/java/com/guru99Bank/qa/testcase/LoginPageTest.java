@@ -20,27 +20,27 @@ public class LoginPageTest extends Guru99TestBase {
 
 	@BeforeMethod
 	public void setUp() {
-		logger.info("******************************Set up started**********************");
+		logger.info("Set up started for LoginPageTest");
 		initialization();
 		login = new LoginPage();
 		login.login(prop.getProperty("username"), prop.getProperty("password"));
-		logger .info("Login with username "+prop.getProperty("username")+ "and password " +  prop.getProperty("password"));
-		logger.info("*******************************Setup Completed************************");
+		logger.info(
+				"Login with username " + prop.getProperty("username") + "and password " + prop.getProperty("password"));
+		logger.info("Setup Completed for LoginPageTest");
 	}
 
 	@Test
 	public void verifyUserLoginSuccessfully() {
-		logger.info("*******************************Test case started*************************");
-		logger.info("********************************verifyUserLoginSuccessfully()***********************");
+		logger.info("verifyUserLoginSuccessfully is started");
 		String title = driver.getTitle();
-		logger.info("The title of page is "+ title);
+		logger.info("The title of page is " + title);
 		Assert.assertEquals(title, "Guru99 Bank Manager HomePage");
-		logger.info("************************************Test case completed**********************");
+		logger.info("verifyUserLoginSuccessfully is completed");
 	}
 
 	@AfterMethod
 	public void tearDown() {
 		driver.quit();
-		logger.info("Chrome is close successfully");
+		logger.info("Browser is closed");
 	}
 }

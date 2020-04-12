@@ -1,11 +1,15 @@
 package com.guru99Bank.qa.pages;
 
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
+
 import com.guru99Bank.qa.helper.Helpers;
 import com.guru99Bank.qa.locators.NewCostumerPageLocators;
 
 public class NewCostumerPage extends NewCostumerPageLocators {
 
 	Helpers helpers = Helpers.getInstance();
+	Logger logger = LogManager.getLogger(NewCostumerPage.class);
 
 	public NewCostumerPage() {
 		super();
@@ -119,21 +123,34 @@ public class NewCostumerPage extends NewCostumerPageLocators {
 	 */
 	public void addNewCostumer(String costumerName, String gender, String dob, String address, String city,
 			String state, String pin, String mobileNumber, String email, String password) {
+		logger.info("Adding new costumer");
 		this.setCostumerName(costumerName);
+		logger.info("Costumer name " + costumerName + "is entered");
 		if (gender.equals("Male")) {
 			this.selectMale();
+		logger.info("Male is selected");
 		} else {
 			this.selectMale();
+		logger.info("Female is selected");
 		}
 		this.setDateOfBirth(dob);
+		logger.info("Date of birth"+ dob+ "is entered");
 		this.setAddress(address);
+		logger.info("Address " + address + "is entered");
 		this.setCity(city);
+		logger.info("City " + city + " is entered");
 		this.setState(state);
+		logger.info("State " + state +" is entered");
 		this.setPinCode(pin);
+		logger.info("PIN " + pin + "is entered");
 		this.setMobilenumber(mobileNumber);
+		logger.info("Mobile number "+ mobileNumber + "is entered");
 		this.setEmail(email);
+		logger.info("Email " + email + " is enterd" );
 		this.setPassword(password);
+		logger.info("Password " + password + "is entered");
 		this.clickOnSubmitButton();
+		logger.info("Clicked on submit button ");
 	}
 
 	/**
@@ -144,6 +161,8 @@ public class NewCostumerPage extends NewCostumerPageLocators {
 	 */
 	public String costumerNameInvalidCharacterVerify(String invalidCostumerName) {
 		this.setCostumerName(invalidCostumerName);
+		logger.info(invalidCostumerName + "is entered");
+		logger.info(helpers.getTextOfWebElement(costumerNameMessageLocator)+ "message on costumer name field");
 		return helpers.getTextOfWebElement(costumerNameMessageLocator);
 	}
 

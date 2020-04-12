@@ -7,8 +7,10 @@ import java.util.concurrent.TimeUnit;
 
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
+import org.openqa.selenium.PageLoadStrategy;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
 
 public class Guru99TestBase {
 	FileInputStream file;
@@ -25,13 +27,13 @@ public class Guru99TestBase {
 					"C:\\Users\\Lavendra rajput\\git\\parabank\\qa.guru99bank.automation.com\\src\\main\\java\\com\\guru99Bank\\qa\\config\\Guru99Bank.properties");
 			prop = new Properties();
 			prop.load(file);
-			logger.info("The Guru99Bank.properties file loaded successfullly");
+			logger.info("Properties file loaded");
 		} catch (FileNotFoundException e) {
 			e.printStackTrace();
-			logger.error("The Guru99Bank.properties file can not be loaded file not found exception occured");
+			logger.error(e+"Exception occured");
 		} catch (Exception e) {
-			logger.error("The Guru99Bank.properties file can not be loaded  occured");
 			e.printStackTrace();
+			logger.error(e+"Exception occured");
 		}
 	}
 
@@ -53,10 +55,10 @@ public class Guru99TestBase {
 		driver.manage().window().maximize();
 		logger.info("Window is maximized ");
 		driver.manage().deleteAllCookies();
-		logger.info("Cookies are deleted successfully");
+		logger.info("Cookies are deleted ");
 		driver.manage().timeouts().pageLoadTimeout(30, TimeUnit.SECONDS);
 		driver.get(prop.getProperty("url"));
-		logger.info(prop.getProperty("url")+"is launched successfully");
+		logger.info(prop.getProperty("url")+"is entered");
 	}
 
 }

@@ -1,5 +1,7 @@
 package com.guru99Bank.qa.testcase;
 
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 import org.testng.Assert;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
@@ -16,14 +18,19 @@ public class NewCostumerTest extends Guru99TestBase {
 	LoginPage login;
 	HomePage homePage;
 	NewCostumerPage newCostumer;
+	Logger logger = LogManager.getLogger(NewCostumerTest.class);
 
 	@BeforeMethod
 	public void setUp() {
+		logger.info("Set up started for NewCostumerTest");
 		initialization();
-		driver.get(prop.getProperty("url"));
 		login = new LoginPage();
 		homePage = login.login(prop.getProperty("username"), prop.getProperty("password"));
+		logger.info(
+				"Login with username " + prop.getProperty("username") + "and password " + prop.getProperty("password"));
 		newCostumer = homePage.clickOnNewCostumerLink();
+		logger.info("Setup Completed for NewCostumerTest");
+
 	}
 
 	@Test(priority = 1)

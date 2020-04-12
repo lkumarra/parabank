@@ -2,28 +2,28 @@
 <testng-results skipped="0" failed="1" ignored="0" total="3" passed="2">
   <reporter-output>
   </reporter-output>
-  <suite name="GURU99BANK AUTOMATION TEST SUITE" duration-ms="66545" started-at="2020-04-04T17:27:45 IST" finished-at="2020-04-04T17:28:52 IST">
+  <suite name="GURU99BANK AUTOMATION TEST SUITE" duration-ms="82452" started-at="2020-04-05T15:35:21 IST" finished-at="2020-04-05T15:36:44 IST">
     <groups>
     </groups>
-    <test name="GURU99BANK TESTCASES" duration-ms="66545" started-at="2020-04-04T17:27:45 IST" finished-at="2020-04-04T17:28:52 IST">
+    <test name="GURU99BANK TESTCASES" duration-ms="82452" started-at="2020-04-05T15:35:21 IST" finished-at="2020-04-05T15:36:44 IST">
       <class name="com.guru99Bank.qa.testcase.HomePageTest">
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.guru99Bank.qa.testcase.HomePageTest@7ad1caa2]" name="setUp" is-config="true" duration-ms="17993" started-at="2020-04-04T17:28:14 IST" finished-at="2020-04-04T17:28:32 IST">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.guru99Bank.qa.testcase.HomePageTest@7e9131d5]" name="setUp" is-config="true" duration-ms="26801" started-at="2020-04-05T15:35:54 IST" finished-at="2020-04-05T15:36:21 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="verifyWelcomePage()[pri:1, instance:com.guru99Bank.qa.testcase.HomePageTest@7ad1caa2]" name="verifyWelcomePage" duration-ms="49" started-at="2020-04-04T17:28:32 IST" finished-at="2020-04-04T17:28:32 IST">
+        <test-method status="PASS" signature="verifyWelcomePage()[pri:1, instance:com.guru99Bank.qa.testcase.HomePageTest@7e9131d5]" name="verifyWelcomePage" duration-ms="254" started-at="2020-04-05T15:36:21 IST" finished-at="2020-04-05T15:36:21 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyWelcomePage -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.guru99Bank.qa.testcase.HomePageTest@7ad1caa2]" name="tearDown" is-config="true" duration-ms="590" started-at="2020-04-04T17:28:32 IST" finished-at="2020-04-04T17:28:33 IST">
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.guru99Bank.qa.testcase.HomePageTest@7e9131d5]" name="tearDown" is-config="true" duration-ms="740" started-at="2020-04-05T15:36:21 IST" finished-at="2020-04-05T15:36:22 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.guru99Bank.qa.testcase.HomePageTest@7ad1caa2]" name="setUp" is-config="true" duration-ms="17822" started-at="2020-04-04T17:28:33 IST" finished-at="2020-04-04T17:28:50 IST">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.guru99Bank.qa.testcase.HomePageTest@7e9131d5]" name="setUp" is-config="true" duration-ms="20166" started-at="2020-04-05T15:36:22 IST" finished-at="2020-04-05T15:36:42 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="FAIL" signature="verifyManagerId()[pri:2, instance:com.guru99Bank.qa.testcase.HomePageTest@7ad1caa2]" name="verifyManagerId" duration-ms="51" started-at="2020-04-04T17:28:50 IST" finished-at="2020-04-04T17:28:50 IST">
+        <test-method status="FAIL" signature="verifyManagerId()[pri:2, instance:com.guru99Bank.qa.testcase.HomePageTest@7e9131d5]" name="verifyManagerId" duration-ms="309" started-at="2020-04-05T15:36:42 IST" finished-at="2020-04-05T15:36:42 IST">
           <exception class="java.lang.AssertionError">
             <message>
               <![CDATA[expected [Manger Id : mngr242402] but found [Manger Id : mngr251216]]]>
@@ -35,7 +35,7 @@ at org.testng.Assert.assertEqualsImpl(Assert.java:136)
 at org.testng.Assert.assertEquals(Assert.java:118)
 at org.testng.Assert.assertEquals(Assert.java:575)
 at org.testng.Assert.assertEquals(Assert.java:585)
-at com.guru99Bank.qa.testcase.HomePageTest.verifyManagerId(HomePageTest.java:49)
+at com.guru99Bank.qa.testcase.HomePageTest.verifyManagerId(HomePageTest.java:44)
 at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
@@ -70,21 +70,21 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyManagerId -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.guru99Bank.qa.testcase.HomePageTest@7ad1caa2]" name="tearDown" is-config="true" duration-ms="600" started-at="2020-04-04T17:28:51 IST" finished-at="2020-04-04T17:28:52 IST">
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.guru99Bank.qa.testcase.HomePageTest@7e9131d5]" name="tearDown" is-config="true" duration-ms="653" started-at="2020-04-05T15:36:43 IST" finished-at="2020-04-05T15:36:44 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- com.guru99Bank.qa.testcase.HomePageTest -->
       <class name="com.guru99Bank.qa.testcase.LoginPageTest">
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.guru99Bank.qa.testcase.LoginPageTest@597f0937]" name="setUp" is-config="true" duration-ms="28338" started-at="2020-04-04T17:27:45 IST" finished-at="2020-04-04T17:28:13 IST">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.guru99Bank.qa.testcase.LoginPageTest@2cdd0d4b]" name="setUp" is-config="true" duration-ms="32005" started-at="2020-04-05T15:35:21 IST" finished-at="2020-04-05T15:35:53 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="verifyUserLoginSuccessfully()[pri:0, instance:com.guru99Bank.qa.testcase.LoginPageTest@597f0937]" name="verifyUserLoginSuccessfully" duration-ms="13" started-at="2020-04-04T17:28:13 IST" finished-at="2020-04-04T17:28:13 IST">
+        <test-method status="PASS" signature="verifyUserLoginSuccessfully()[pri:0, instance:com.guru99Bank.qa.testcase.LoginPageTest@2cdd0d4b]" name="verifyUserLoginSuccessfully" duration-ms="25" started-at="2020-04-05T15:35:53 IST" finished-at="2020-04-05T15:35:54 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyUserLoginSuccessfully -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.guru99Bank.qa.testcase.LoginPageTest@597f0937]" name="tearDown" is-config="true" duration-ms="610" started-at="2020-04-04T17:28:13 IST" finished-at="2020-04-04T17:28:14 IST">
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.guru99Bank.qa.testcase.LoginPageTest@2cdd0d4b]" name="tearDown" is-config="true" duration-ms="651" started-at="2020-04-05T15:35:54 IST" finished-at="2020-04-05T15:35:54 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
